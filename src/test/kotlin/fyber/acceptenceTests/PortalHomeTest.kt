@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 import kotlin.test.assertTrue
 
 @Test
-class PortalHomeTest() : TestBase() {
+class PortalHomeTest() : AcceptanceTestBase() {
 
     @Test
     fun searchLogo() {

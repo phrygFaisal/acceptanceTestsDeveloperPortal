@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest
 import java.net.URI
 import java.util.concurrent.TimeUnit
 
-abstract class TestBase {
+abstract class AcceptanceTestBase {
 
     lateinit var driver: WebDriver
         public set

@@ -1,0 +1,12 @@
+
+target/test-classes/fyber/acceptenceTests/PortalHomeTest.class
+
+*.class
+
+.idea/misc.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
+
+acceptanceTestsDeveloperPortal.iml
