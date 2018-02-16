@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 import kotlin.test.assertTrue
 
 @Test
-class PortalHomeTest(driver: WebDriver) : PortalHome(driver) {
+class PortalHomeTest() : TestBase() {
 
     @Test
     fun searchLogo() {
