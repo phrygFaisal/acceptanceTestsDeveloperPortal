@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.FindBy
 import org.openqa.selenium.support.PageFactory
 
-open class PortalHome(val driver: WebDriver){
+open class PortalHome(public val driver: WebDriver){
 
     @FindBy(xpath = "//*[@id=\"header\"]/div/h1/a")
     private val logoMain : WebElement ?=null;

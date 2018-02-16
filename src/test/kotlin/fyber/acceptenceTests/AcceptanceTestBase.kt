@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit
 abstract class TestBase {
 
     lateinit var driver: WebDriver
-        private set
+        public set
 
     @BeforeTest
     fun setup() {
