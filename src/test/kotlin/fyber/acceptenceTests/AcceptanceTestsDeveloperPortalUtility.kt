@@ -11,6 +11,8 @@ import java.util.*
 
         private var properties: Properties? = null
 
+        private var pageProperties:Properties?=null
+
         fun loadProperties(): Unit {
             try {
                 properties = Properties()
@@ -24,5 +26,7 @@ import java.util.*
             loadProperties()
             return AcceptanceTestsDeveloperPortalUtility.properties?.getProperty(properties).toString()
         }
+
+
     }
 

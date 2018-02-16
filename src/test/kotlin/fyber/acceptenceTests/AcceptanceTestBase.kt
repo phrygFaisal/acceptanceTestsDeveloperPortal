@@ -1,9 +1,11 @@
 package fyber.acceptenceTests
 
-import fyber.acceptenceTests.AcceptanceTestsDeveloperPortalUtility
+
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
+import org.testng.annotations.AfterClass
 import org.testng.annotations.AfterTest
+import org.testng.annotations.BeforeClass
 import org.testng.annotations.BeforeTest
 import java.net.URI
 import java.util.concurrent.TimeUnit
@@ -11,9 +13,9 @@ import java.util.concurrent.TimeUnit
 abstract class AcceptanceTestBase {
 
     lateinit var driver: WebDriver
-        public set
+        set
 
-    @BeforeTest
+    @BeforeClass
     fun setup() {
         System.setProperty(AcceptanceTestsDeveloperPortalUtility.getProperties("nameDriver"),
                 AcceptanceTestsDeveloperPortalUtility.getProperties("pathDriver") +
@@ -24,7 +26,9 @@ abstract class AcceptanceTestBase {
         driver?.get(URI(AcceptanceTestsDeveloperPortalUtility.getProperties("pageURL")).toString())
     }
 
-    @AfterTest
+
+
+    @AfterClass
     fun driverClose() {
         driver?.close();
     }
